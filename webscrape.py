@@ -2,13 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 from sqlalchemy import create_engine, Table, Column, Integer, String, MetaData
 
-# Set the connection parameters
-host = "LIZVAI"
-port = 9969
-database = "postgres"
-user = "LIZVAI"
-password = "Selaromor00"
-
 # Connect to the PostgreSQL server
 engine = create_engine(f'postgresql://{user}:{password}@{host}:{port}/{database}')
 metadata = MetaData()
